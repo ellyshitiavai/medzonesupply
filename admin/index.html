@@ -1,12 +1,24 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Content Manager</title>
-    <script src="https://unpkg.com/@decapcms/decap-cms@3.8.3/dist/decap-cms.js"></script>
   </head>
   <body>
     <!-- CMS mounts to this div -->
     <div id="nc-root"></div>
+
+    <!-- Load Decap CMS after the mount div -->
+    <script src="https://unpkg.com/@decapcms/decap-cms@3.8.3/dist/decap-cms.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize CMS after DOM is ready
+        if (typeof CMS !== "undefined") {
+          CMS.init();
+        } else {
+          console.error("Decap CMS failed to load");
+        }
+      });
+    </script>
   </body>
 </html>
