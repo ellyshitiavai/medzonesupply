@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Content Manager</title>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </head>
+  <body>
+    <!-- CMS will mount here -->
+    <script>
+      if (window.location.hostname === 'localhost') {
+        // dev hint
+        console.log('Run Netlify Decap CMS in dev mode with Identity + Git Gateway or use Netlify admin on deploy.');
+      }
+    </script>
+    <div id="nc-root"></div>
+  </body>
+</html>
