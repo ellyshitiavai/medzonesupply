@@ -1,9 +1,15 @@
-
 [build]
-  publish = "/"
+  # No build step, since your site is plain HTML/CSS/JS
   command = ""
+  publish = "/"
 
-[[redirects]]
-  from = "/admin/*"
-  to = "/admin/index.html"
-  status = 200
+# Ensure YAML and config files are served with correct MIME type
+[[headers]]
+  for = "/*.yml"
+  [headers.values]
+    Content-Type = "text/yml; charset=utf-8"
+
+[[headers]]
+  for = "/admin/config.yml"
+  [headers.values]
+    Content-Type = "text/yml; charset=utf-8"
