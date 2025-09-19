@@ -6,13 +6,12 @@
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </head>
   <body>
-    <!-- CMS will mount here -->
+    <!-- Required mount point -->
     <script>
-      if (window.location.hostname === 'localhost') {
-        // dev hint
-        console.log('Run Netlify Decap CMS in dev mode with Identity + Git Gateway or use Netlify admin on deploy.');
-      }
+      window.CMS_MANUAL_INIT = true;
     </script>
-    <div id="nc-root"></div>
+    <script>
+      CMS.init();
+    </script>
   </body>
 </html>
