@@ -1,3 +1,4 @@
+site_url: https://medzonesupplies.netlify.app
 backend:
   name: github
   repo: ellyshitiavai/medzonesupply
@@ -5,7 +6,7 @@ backend:
   auth_scope: repo
   base_url: https://auth.decapcms.org
 
-site_url: https://medzonesupplies.netlify.app
+
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
