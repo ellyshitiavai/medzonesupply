@@ -1,10 +1,14 @@
 site_url: "https://medzonesupply.netlify.app"
 
 backend:
+  backend:
   name: github
-  repo: ellyshitiavai/medzonesupply   # your GitHub repo
+  repo: ellyshitiavai/medzonesupply
   branch: main
-  base_url: https://auth.decapcms.org # Decap free auth server
+  auth_type: implicit
+  site_domain: https://medzonesupply.netlify.app
+  base_url: https://api.github.com
+
 
 media_folder: "assets/images/uploads"   # stored in repo
 public_folder: "/assets/images/uploads" # served on site
