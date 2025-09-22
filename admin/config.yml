@@ -1,13 +1,13 @@
 backend:
   name: github
-  repo: ellyshitiavai/medzonesupply
-  branch: main
+  repo: ellyshitiavai/medzonesupply   # Your GitHub repo
+  branch: main                         # Branch to commit content
   auth_type: implicit
   site_domain: https://medzonesupply.netlify.app
   base_url: https://api.github.com
 
-media_folder: "assets/images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/images/uploads"   # Where images are stored in repo
+public_folder: "/images/uploads"        # How images are referenced on the site
 
 collections:
   - name: "products"
